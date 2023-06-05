@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anemone</title>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/favicon/site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Modern Normalizer -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    /> -->
+
+    <!-- Font Montserrat 400, 500, 600, 700 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Inter 500, 700 dla footer-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--test-->
+    <link rel="stylesheet" href="./sass/main.css" />
+    <!--test-->
+  </head>
+
+  <body>
+    <header class="header">
+      <section class="section header-section">
+        <nav class="header-nav">
+          <a href="index.html">
+            <svg class="header-logo" width="45" height="35">
+              <use href="./images/icons.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <nav>
+            <ul class="header-nav_list">
+              <li class="header-nav_list-element">
+                <a href="#anemone">Anemone</a>
+              </li>
+              <li class="header-nav_list-element">
+                <a href="#about">About us</a>
+              </li>
+              <li class="header-nav_list-element">
+                <a href="#store">Store</a>
+              </li>
+              <li class="header-nav_list-element">
+                <a href="#delivery">Delivery</a>
+              </li>
+              <li class="header-nav_list-element">
+                <a href="#blog">Blog</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="header-list">
+            <li class="header-list_element">
+              <a href="tel:+380631234567">
+                <svg width="22" height="22">
+                  <use href="./images/icons.svg#icon-tel"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-list_element">
+              <button class="header-burger">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <div class="header-mobile-menu">
+        <button class="header-mobile-menu_close menu-close">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-x-modal"></use>
+          </svg>
+        </button>
+        <nav>
+          <ul class="header-mobile-menu_list">
+            <li class="header-mobile-menu_list-element">
+              <a class="menu-close" href="#anemone">Anemone</a>
+            </li>
+            <li class="header-mobile-menu_list-element">
+              <a class="menu-close" href="#about">About us</a>
+            </li>
+            <li class="header-mobile-menu_list-element">
+              <a class="menu-close" href="#store">Store</a>
+            </li>
+            <li class="header-mobile-menu_list-element">
+              <a class="menu-close" href="#delivery">Delivery</a>
+            </li>
+            <li class="header-mobile-menu_list-element">
+              <a class="menu-close" href="#blog">Blog</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="section hero-section" id="anemone">
+        <span class="hero-span"
+          >flower<br />
+          studio
+        </span>
+        <img
+          class="hero-img"
+          src="./images/hero.jpg"
+          alt=""
+          srcset="./images/hero.jpg 145w, ./images/hero-tablet&desktop.jpg 390w"
+          sizes="(max-width: 767px) 145px, (min-width: 768px) 390px"
+        />
+        <svg class="hero-icon" width="64" height="76">
+          <use href="./images/icons.svg#icon-btn"></use>
+        </svg>
+        <h1 class="hero-title">anemone</h1>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section about-section" id="about">
+        <h2 class="about-title">about</h2>
+        <div class="about-box">
+          <p class="about-p">
+            We are a minimalistic flower studio. We love people and flowers.
+            Therefore, every day we give people the beauty and joy creating
+            stylish and modern masterpieces. Every bouquet we create is unique
+            as you are.
+          </p>
+          <picture class="about-img">
+            <source
+              media="(min-width:1280px)"
+              srcset="
+                ./images/image_aboutDesktop.jpg 1x,
+                ./images/image_aboutDesktop.jpg 2x
+              "
+              type="image/jpeg"
+            />
+
+            <source
+              media="(min-width:768px)"
+              srcset="
+                ./images/image_aboutTablet.jpg 1x,
+                ./images/image_aboutTablet.jpg 2x
+              "
+              type="image/jpeg"
+            />
+
+            <source
+              media="(max-width:767px)"
+              srcset="
+                ./images/image_aboutMobile.jpg 1x,
+                ./images/image_aboutMobile.jpg 2x
+              "
+              type="image/jpeg"
+            />
+            <img
+              src="./images/image_aboutDesktop.jpg"
+              alt=""
+              loading="lazy"
+              class="about-img_photo"
+            />
+          </picture>
+        </div>
+      </section>
+
+      <!-- STORE -->
+      <section class="section store-section" id="store">
+        <h2 class="store-title">store</h2>
+        <ul class="store-list">
+          <li class="store-list_element">
+            <img
+              class="store-list_element-img"
+              src="./images/image_store1Mobile.jpg"
+              alt=""
+              srcset="
+                ./images/image_store1Mobile.jpg  155w,
+                ./images/image_store1Tablet.jpg  399w,
+                ./images/image_store1Desktop.jpg 600w
+              "
+              sizes="(max-width: 767px) 155px, (min-width: 768px) and (max-width: 1279px) 399px, (min-width: 1280px) 600px"
+            />
+            <h3 class="store-list_element-title">compliments</h3>
+            <p>from $15</p>
+          </li>
+          <li class="store-list_element">
+            <img
+              class="store-list_element-img"
+              src="./images/image_store2Mobile.jpg"
+              alt=""
+              srcset="
+                ./images/image_store2Mobile.jpg  155w,
+                ./images/image_store2Tablet.jpg  399w,
+                ./images/image_store2Desktop.jpg 600w
+              "
+              sizes="(max-width: 767px) 155px, (min-width: 768px) and (max-width: 1279px) 399px, (min-width: 1280px) 600px"
+            />
+            <h3 class="store-list_element-title">bouquets size S</h3>
+            <p>from $25</p>
+          </li>
+          <li class="store-list_element">
+            <img
+              class="store-list_element-img"
+              src="./images/image_store3Mobile.jpg"
+              alt=""
+              srcset="
+                ./images/image_store3Mobile.jpg  155w,
+                ./images/image_store3Tablet.jpg  399w,
+                ./images/image_store3Desktop.jpg 600w
+              "
+              sizes="(max-width: 767px) 155px, (min-width: 768px) and (max-width: 1279px) 399px, (min-width: 1280px) 600px"
+            />
+            <h3 class="store-list_element-title">bouquets size M</h3>
+            <p>from $45</p>
+          </li>
+          <li class="store-list_element">
+            <img
+              class="store-list_element-img"
+              src="./images/image_store4Mobile.jpg"
+              alt=""
+              srcset="
+                ./images/image_store4Mobile.jpg  155w,
+                ./images/image_store4Tablet.jpg  399w,
+                ./images/image_store4Desktop.jpg 600w
+              "
+              sizes="(max-width: 767px) 155px, (min-width: 768px) and (max-width: 1279px) 399px, (min-width: 1280px) 600px"
+            />
+            <h3 class="store-list_element-title">bouquets size L</h3>
+            <p>from $60</p>
+          </li>
+        </ul>
+        <div class="store-box">
+          <button class="btn store-box-button">Order flowers</button>
+        </div>
+      </section>
+
+      <!-- DELIVERY -->
+      <section class="section delivery-section" id="delivery">
+        <h2 class="delivery-title">delivery</h2>
+        <ul class="delivery-list">
+          <li class="delivery-list_element delivery-list_element--margin">
+            <span
+              class="delivery-list_element-span delivery-list_element-span--padding"
+              >1</span
+            >
+            <p>Choose your bouquet and make an order on website</p>
+          </li>
+          <li class="delivery-list_element">
+            <span class="delivery-list_element-span">2</span>
+            <p>
+              Wait for the call to clarify the details of the order. You can pay
+              online or to the courier
+            </p>
+          </li>
+          <li class="delivery-list_element">
+            <span class="delivery-list_element-span">3</span>
+            <p>
+              Wait for the delivery at the selected time or pick up the order
+              from the store
+            </p>
+          </li>
+          <li class="delivery-list_element">
+            <span class="delivery-list_element-span">4</span>
+            <p>Make someone happy or enjoy yourself</p>
+          </li>
+        </ul>
+      </section>
+      <div class="delivery-box">
+        <img
+          class="delivery-box_img"
+          src="./images/image_deliveryMobile.jpg"
+          alt=""
+          srcset="
+            ./images/image_deliveryMobile.jpg  320w,
+            ./images/image_deliveryTablet.jpg  768w,
+            ./images/image_deliveryDesktop.jpg 600w
+          "
+          sizes="(max-width: 767px) 320px, (min-width: 768px) and (max-width: 1279px) 768px, (min-width: 1280px) 1280px"
+        />
+      </div>
+
+      <!-- BLOG -->
+      <section class="section" id="blog">
+        <h2 class="blog-title">blog</h2>
+        <ul class="blog-list">
+          <li class="blog-list_element">
+            <picture class="blog-list_element-img">
+              <source
+                media="(min-width:1280px)"
+                srcset="
+                  ./images/image_blog1Dekstop.jpg 1x,
+                  ./images/image_blog1Dekstop.jpg 2x
+                "
+                type="image/jpeg"
+              />
+
+              <source
+                media="(min-width:768px)"
+                srcset="
+                  ./images/image_blog1Tablet.jpg 1x,
+                  ./images/image_blog1Tablet.jpg 2x
+                "
+                type="image/jpeg"
+              />
+
+              <source
+                media="(max-width:767px)"
+                srcset="
+                  ./images/image_blog1Mobile.jpg 1x,
+                  ./images/image_blog1Mobile.jpg 2x
+                "
+                type="image/jpeg"
+              />
+              <img
+                src="./images/image_blog1Mobile.jpg"
+                alt=""
+                loading="lazy"
+                class="blog-list_element-img"
+              />
+            </picture>
+          </li>
+          <li class="blog-list_element">
+            <picture class="blog-list_element-img">
+              <source
+                media="(min-width:1280px)"
+                srcset="
+                  ./images/image_blog2Dekstop.jpg 1x,
+                  ./images/image_blog2Dekstop.jpg 2x
+                "
+                type="image/jpeg"
+              />
+
+              <source
+                media="(min-width:768px)"
+                srcset="
+                  ./images/image_blog2Tablet.jpg 1x,
+                  ./images/image_blog2Tablet.jpg 2x
+                "
+                type="image/jpeg"
+              />
+
+              <source
+                media="(max-width:767px)"
+                srcset="
+                  ./images/image_blog2Mobile.jpg 1x,
+                  ./images/image_blog2Mobile.jpg 2x
+                "
+                type="image/jpeg"
+              />
+              <img
+                src="./images/image_blog1Mobile.jpg"
+                alt=""
+                loading="lazy"
+                class="blog-list_element-img"
+              />
+            </picture>
+          </li>
+          <li class="blog-list_element blog-list_element--display">
+            <picture class="blog-list_element-img">
+              <source
+                media="(min-width:1280px)"
+                srcset="
+                  ./images/image_blog3Dekstop.jpg 1x,
+                  ./images/image_blog3Dekstop.jpg 2x
+                "
+                type="image/jpeg"
+              />
+
+              <source
+                media="(min-width:768px)"
+                srcset="
+                  ./images/image_blog3Tablet.jpg 1x,
+                  ./images/image_blog3Tablet.jpg 2x
+                "
+                type="image/jpeg"
+              />
+
+              <source
+                media="(max-width:767px)"
+                srcset="
+                  ./images/image_blog3Mobile.jpg 1x,
+                  ./images/image_blog3Mobile.jpg 2x
+                "
+                type="image/jpeg"
+              />
+              <img
+                src="./images/image_blog3Mobile.jpg"
+                alt=""
+                loading="lazy"
+                class="blog-list_element-img"
+              />
+            </picture>
+          </li>
+        </ul>
+        <ul class="blog-list2">
+          <li>
+            <svg class="blog-list2_icon" width="50" height="50">
+              <use href="./images/icons.svg#icon-arrow-left"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="blog-list2_icon" width="50" height="50">
+              <use href="./images/icons.svg#icon-arrow-right"></use>
+            </svg>
+          </li>
+        </ul>
+        <p class="blog-p">Follow to our newsletter</p>
+        <div class="blog-box">
+          <button class="btn blog-box_button" data-modal-open>Subscribe</button>
+        </div>
+      </section>
+
+      <!-- NEWSLETTER BOX -->
+      <div class="backdrop is-hidden" data-modal>
+        <div class="newsletter-box">
+          <button class="newsletter-btn-close" data-modal-close>
+            <svg>
+              <use href="./images/icons.svg#icon-x-modal"></use>
+            </svg>
+          </button>
+          <div class="newsletter-box_img">
+            <img
+              class="newsletter-img"
+              src="./images/image_modalMobile.jpg"
+              alt=""
+              srcset="
+                ./images/image_modalMobile.jpg  320w,
+                ./images/image_modalTablet.jpg  768w,
+                ./images/image_modalDesktop.jpg 600w
+              "
+              sizes="(max-width: 767px) 271px, (min-width: 768px) and (max-width: 1279px) 768px, (min-width: 1280px) 428px"
+            />
+          </div>
+          <div class="newsletter-box_text">
+            <h2 class="newsletter-title">Follow to our newsletter</h2>
+            <p class="newsletter-p">
+              Be the first to get exclusive offers and the latest news on our
+              product directly in your box.
+            </p>
+            <label class="newsletter-label" for="email">E-mail</label>
+            <input
+              class="newsletter-input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your e-mail"
+              required
+            />
+            <button class="newsletter-send">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <section class="section footer-section">
+        <div class="footer-row">
+          <div class="footer-col footer-col--display">
+            <a href="index.html">
+              <svg width="60" height="60">
+                <use href="./images/icons.svg#icon-logo"></use>
+              </svg>
+            </a>
+          </div>
+
+          <div class="footer-col">
+            <h2 class="footer-title">Navigation</h2>
+            <nav>
+              <ul class="footer-list">
+                <li class="footer-list_element">
+                  <a href="#anemone">Anemone</a>
+                </li>
+                <li class="footer-list_element">
+                  <a href="#about">About us</a>
+                </li>
+                <li class="footer-list_element"><a href="#store">Store</a></li>
+                <li class="footer-list_element">
+                  <a href="#delivery">Delivery</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="footer-col">
+            <h2 class="footer-title">Opening times<br /><br /></h2>
+            <p class="footer-p">Every day<br />9:00-22:00</p>
+          </div>
+
+          <div class="footer-col">
+            <h2 class="footer-title">Contacts</h2>
+            <address>
+              <ul class="footer-list">
+                <li class="footer-list_element">
+                  <a href="tel:+380631234567">+38 063 123 45 67</a>
+                </li>
+                <li class="footer-list_element">
+                  <a href="mailto:anemonestudio@example.com"
+                    >anemonestudio<br /><span>@example.com</span></a
+                  >
+                </li>
+                <li class="footer-list_element">
+                  Reitarska Street, 11 Kyiv, Ukraine
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="footer-col">
+            <ul class="footer-list footer-list_icons">
+              <li class="footer-list_element">
+                <a href="#">
+                  <svg width="28" height="28">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-list_element">
+                <a href="#">
+                  <svg width="28" height="28">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/newsletter.js"></script>
+    <!-- <script src="./js/index.js" type="module"></script> -->
+  </body>
+</html>

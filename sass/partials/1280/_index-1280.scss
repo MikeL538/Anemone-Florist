@@ -1,0 +1,92 @@
+@media screen and (min-width: 1280px) {
+  //HERO
+  .hero {
+    &-span {
+      font-size: 32px;
+    }
+
+    &-img {
+      margin: 0 110px;
+    }
+
+    &-title {
+      font-size: 160px;
+      top: 535px;
+    }
+
+    &-icon {
+      height: 166px;
+      width: 166px;
+    }
+  }
+
+  //ABOUT
+  .about {
+    &-p {
+      font-size: 22px;
+      margin-right: 90px;
+    }
+
+    &-img {
+      max-height: 344px;
+      max-width: 632px;
+    }
+
+    &-box {
+      align-items: center;
+    }
+  }
+
+  //STORE
+  .store {
+    &-list_element {
+      &-img {
+        max-height: 640px;
+        max-width: 600px;
+      }
+      &-title {
+        font-size: 36px;
+      }
+
+      > p {
+        font-size: 28px;
+      }
+    }
+  }
+
+  //DELIVERY
+  .delivery {
+    &-list_element {
+      margin-bottom: 32px;
+
+      &-span {
+        margin-right: 56px;
+      }
+
+      > p {
+        font-size: 32px;
+      }
+    }
+
+    &-box {
+      &_img {
+        max-height: 391px;
+        max-width: 1280px;
+      }
+    }
+  }
+
+  //BLOG
+  .blog {
+    &-list_element {
+      &--display {
+        display: block;
+      }
+
+      &-img {
+        max-height: 421px;
+        max-width: 390px;
+      }
+    }
+  }
+}

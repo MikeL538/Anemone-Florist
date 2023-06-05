@@ -1,0 +1,81 @@
+@import './vars';
+
+.footer {
+  background-color: #000;
+
+  &-section {
+    padding: 0 16px;
+  }
+
+  &-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 480px;
+    width: 100%;
+  }
+
+  &-col {
+    height: 25%;
+    padding-top: 32px;
+    width: 48%;
+
+    &:last-child {
+      padding-top: 16px;
+    }
+
+    &--display {
+      display: none;
+    }
+  }
+
+  &-title {
+    color: $text2;
+    display: inline;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  &-list {
+    font-style: normal;
+    padding: 0;
+    width: 100%;
+
+    &_icons {
+      display: flex;
+      gap: 14px;
+    }
+
+    &_element {
+      color: $text2;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.21;
+      margin-bottom: 12px;
+
+      > a {
+        color: $text2;
+        font-family: 'Inter', sans-serif;
+        text-decoration: none;
+
+        > span {
+          color: $text2;
+          font-family: 'Inter', sans-serif;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  &-p {
+    color: $text2;
+    display: inline;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.21;
+  }
+}

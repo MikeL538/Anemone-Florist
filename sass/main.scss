@@ -1,0 +1,12 @@
+@use './partials/vars';
+@use './partials/global';
+@use './partials/header';
+@use './partials/index';
+@use './partials/newsletter';
+@use './partials/footer';
+@use './partials/768/header-768';
+@use './partials/768/index-768';
+@use './partials/768/footer-768';
+@use './partials/1280/header-1280';
+@use './partials/1280/index-1280';
+@use './partials/1280/footer-1280';

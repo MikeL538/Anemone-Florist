@@ -1,0 +1,9 @@
+@import '../vars';
+
+@media screen and (min-width: 1280px) {
+  .header {
+    &-nav_list {
+      gap: 48px;
+    }
+  }
+}

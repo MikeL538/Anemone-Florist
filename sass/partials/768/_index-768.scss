@@ -1,0 +1,149 @@
+@media screen and (min-width: 768px) {
+  //HERO
+  .hero {
+    &-section {
+      padding-top: 119px;
+    }
+
+    &-img {
+      max-height: 636px;
+      max-width: 390px;
+    }
+
+    &-span {
+      font-size: 24px;
+      margin-right: 40px;
+    }
+
+    &-title {
+      font-size: 120px;
+      top: 585px;
+    }
+
+    &-icon {
+      height: 150px;
+      width: 145px;
+    }
+  }
+
+  //ABOUT
+  .about {
+    &-title {
+      font-size: 44px;
+    }
+
+    &-p {
+      font-size: 20px;
+      margin-right: 54px;
+      width: 50%;
+    }
+
+    &-img {
+      max-height: 217px;
+      max-width: 344px;
+    }
+
+    &-box {
+      display: flex;
+    }
+  }
+
+  //STORE
+  .store {
+    &-title {
+      font-size: 44px;
+    }
+
+    &-list_element {
+      &-img {
+        max-height: 399px;
+        max-width: 344px;
+      }
+      &-title {
+        align-items: center;
+        display: flex;
+        font-size: 32px;
+        white-space: nowrap;
+
+        &::after {
+          border-top: 1px solid black;
+          content: '';
+          display: inline-block;
+          margin-left: 8px;
+          vertical-align: middle;
+          width: 100%;
+        }
+      }
+
+      > p {
+        font-size: 24px;
+      }
+    }
+
+    &-box-button {
+      font-size: 28px;
+      height: 64px;
+      line-height: 0.86;
+      margin-top: 60px;
+      width: 280px;
+    }
+  }
+
+  //DELIVERY
+  .delivery {
+    &-title {
+      font-size: 44px;
+    }
+
+    &-list_element {
+      &-span {
+        font-size: 26px;
+        margin-right: 20px;
+        padding: 16px 25px;
+
+        &--padding {
+          padding: 16px27px;
+        }
+      }
+
+      > p {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .delivery-box {
+    padding-bottom: 100px;
+
+    &_img {
+      max-height: 264px;
+    }
+  }
+
+  //BLOG
+  .blog {
+    &-title {
+      font-size: 44px;
+    }
+
+    &-list_element-img {
+      max-height: 398px;
+      max-width: 344px;
+    }
+    &-list2_icon {
+      height: 61px;
+      width: 61px;
+    }
+
+    &-p {
+      font-size: 32px;
+    }
+
+    &-box_button {
+      font-size: 28px;
+      height: 64px;
+      line-height: 0.86;
+      width: 280px;
+    }
+  }
+}

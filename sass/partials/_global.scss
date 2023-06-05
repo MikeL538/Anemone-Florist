@@ -1,0 +1,45 @@
+@import './vars';
+
+ul {
+  list-style: none;
+}
+
+.section {
+  margin: 0 auto;
+  max-width: 480px;
+  padding: 0 16px 60px 16px;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  color: $text1;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    max-width: 768px;
+    padding: 0 24px 100px 24px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section {
+    max-width: 1280px;
+    padding: 0 24px 100px 24px;
+  }
+}
+
+.btn:hover {
+  background-color: #e25b41;
+}
+
+.btn:focus {
+  background-color: #fa6f54;
+}

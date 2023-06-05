@@ -1,0 +1,22 @@
+$basic: #e86f54;
+$text1: #000;
+$text2: #fff;
+
+@mixin title-line {
+  &-title {
+    align-items: center;
+    display: flex;
+    font-size: 24px;
+    gap: 14px;
+    line-height: 1.21;
+    text-transform: uppercase;
+
+    &::after {
+      border-top: 1px solid black;
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 100%;
+    }
+  }
+}
