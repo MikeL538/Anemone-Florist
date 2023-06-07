@@ -1,4 +1,4 @@
-@import './vars';
+@import "./vars";
 
 .footer {
   background-color: #000;
@@ -33,7 +33,7 @@
   &-title {
     color: $text2;
     display: inline;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 18px;
     line-height: 1.2;
   }
@@ -50,20 +50,29 @@
 
     &_element {
       color: $text2;
-      font-family: 'Inter', sans-serif;
+      font-family: "Inter", sans-serif;
       font-size: 14px;
       font-weight: 500;
       line-height: 1.21;
       margin-bottom: 12px;
 
+      &-btn {
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: $text2;
+        padding: 0;
+        font-size: 14px;
+      }
+
       > a {
         color: $text2;
-        font-family: 'Inter', sans-serif;
+        font-family: "Inter", sans-serif;
         text-decoration: none;
 
         > span {
           color: $text2;
-          font-family: 'Inter', sans-serif;
+          font-family: "Inter", sans-serif;
           text-decoration: none;
         }
       }
@@ -73,7 +82,7 @@
   &-p {
     color: $text2;
     display: inline;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.21;

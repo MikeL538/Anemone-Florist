@@ -1,4 +1,4 @@
-@import './vars';
+@import "./vars";
 
 // HERO
 .hero {
@@ -6,7 +6,7 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    padding-bottom: 100px;
+    padding-bottom: 120px;
     padding-right: auto;
     padding-top: 95px;
   }
@@ -19,6 +19,7 @@
 
   &-img {
     border-radius: 226px;
+
     display: flex;
     height: 100%;
     margin-right: 8px;
@@ -39,6 +40,7 @@
   &-icon {
     min-height: 76px;
     min-width: 64px;
+    cursor: pointer;
   }
 }
 

@@ -28,12 +28,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <!-- Modern Normalizer -->
-    <!-- <link
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
-    /> -->
+    />
 
     <!-- Font Montserrat 400, 500, 600, 700 -->
     <link
@@ -46,9 +46,7 @@
       rel="stylesheet"
     />
 
-    <!--test-->
     <link rel="stylesheet" href="./sass/main.css" />
-    <!--test-->
   </head>
 
   <body>
@@ -82,11 +80,11 @@
 
           <ul class="header-list">
             <li class="header-list_element">
-              <a href="tel:+380631234567">
+              <button class="header-list_element-btn" data-modal-open-contact>
                 <svg width="22" height="22">
                   <use href="./images/icons.svg#icon-tel"></use>
                 </svg>
-              </a>
+              </button>
             </li>
             <li class="header-list_element">
               <button class="header-burger">
@@ -136,12 +134,15 @@
         </span>
         <img
           class="hero-img"
-          src="./images/hero.jpg"
+          src="./images/image_hero.jpg"
           alt=""
-          srcset="./images/hero.jpg 145w, ./images/hero-tablet&desktop.jpg 390w"
+          srcset="
+            ./images/image_hero.jpg                145w,
+            ./images/image_hero-tablet&desktop.jpg 390w
+          "
           sizes="(max-width: 767px) 145px, (min-width: 768px) 390px"
         />
-        <svg class="hero-icon" width="64" height="76">
+        <svg class="hero-icon" width="64" height="76" data-modal-open-contact>
           <use href="./images/icons.svg#icon-btn"></use>
         </svg>
         <h1 class="hero-title">anemone</h1>
@@ -260,7 +261,9 @@
           </li>
         </ul>
         <div class="store-box">
-          <button class="btn store-box-button">Order flowers</button>
+          <button class="btn store-box-button" data-modal-open-contact>
+            Order flowers
+          </button>
         </div>
       </section>
 
@@ -521,7 +524,12 @@
             <address>
               <ul class="footer-list">
                 <li class="footer-list_element">
-                  <a href="tel:+380631234567">+38 063 123 45 67</a>
+                  <button
+                    class="footer-list_element-btn"
+                    data-modal-open-contact
+                  >
+                    +38 063 123 45 67
+                  </button>
                 </li>
                 <li class="footer-list_element">
                   <a href="mailto:anemonestudio@example.com"
@@ -557,6 +565,39 @@
       </section>
     </footer>
 
+    <div class="backdrop is-hidden" data-modal-contact>
+      <div class="contact">
+        <button class="contact-btn" data-modal-close-contact>
+          <svg class="contact-btn_close">
+            <use href="./images/icons.svg#icon-x-modal"></use>
+          </svg>
+        </button>
+        <h2 class="contact-title">Contact us</h2>
+        <p class="contact-p">
+          If you have any additional questions or you want to clarify something
+          before you make an order please fill in your contact details. We will
+          call you back.
+        </p>
+        <form class="contact-form">
+          <label for="contact-name">Name</label>
+          <input
+            class="contact-name"
+            id="contact-name"
+            type="text"
+            placeholder="Your name"
+          />
+          <label for="contact-email">E-mail</label>
+          <input
+            class="contact-email"
+            id="contact-email"
+            type="email"
+            placeholder="Your email"
+          />
+        </form>
+        <button class="contact-btn_send">Send</button>
+      </div>
+    </div>
+
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
@@ -565,6 +606,7 @@
     ></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/newsletter.js"></script>
+    <script src="./js/modalContact.js"></script>
     <!-- <script src="./js/index.js" type="module"></script> -->
   </body>
 </html>

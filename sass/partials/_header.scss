@@ -1,4 +1,4 @@
-@import './vars';
+@import "./vars";
 .header {
   background: #fff;
   height: 70px;
@@ -27,6 +27,12 @@
   &-list {
     display: flex;
     padding: 0;
+
+    &_element-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
 
     &_element:first-child {
       margin-right: 14px;
